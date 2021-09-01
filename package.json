@@ -1,18 +1,18 @@
 {
-  "name": "webpack-config-utils",
+  "name": "webpack-config-create-utils",
   "version": "1.0.0",
   "description": "webpack config utils with default loaders and plugin, which help create webpack.config file",
   "main": "index.js",
   "scripts": {},
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/webster6667/webpack-config-utils.git"
+    "url": "git+https://github.com/webster6667/webpack-config-create-utils.git"
   },
   "keywords": [],
   "author": "webster6667",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/webster6667/webpack-config-utils/issues"
+    "url": "https://github.com/webster6667/webpack-config-create-utils/issues"
   },
   "peerDependencies": {
     "@babel/plugin-proposal-class-properties": "^7.14.5",
@@ -34,5 +34,5 @@
     "svgo-loader": "^3.0.0",
     "terser-webpack-plugin": "^5.1.4"
   },
-  "homepage": "https://github.com/webster6667/webpack-config-utils#readme"
+  "homepage": "https://github.com/webster6667/webpack-config-create-utils#readme"
 }

@@ -2,16 +2,16 @@
     <img src="./illustration.svg" alt="illustration" width="400"/>
 </p>
 
-# webpack-config-utils
+# webpack-config-create-utils
 
 > webpack config utils with default loaders and plugin, which help create webpack.config file
 
-[![npm version](https://badge.fury.io/js/webpack-config-utils.svg)](https://www.npmjs.com/package/webpack-config-utils)
+[![npm version](https://badge.fury.io/js/webpack-config-create-utils.svg)](https://www.npmjs.com/package/webpack-config-create-utils)
 
 ### Install
 
 ```
-npm i -D webpack-config-utils
+npm i -D webpack-config-create-utils
 ```
 
 ### Initialization
@@ -23,7 +23,7 @@ const {
 		getStyleRules,
 		getScriptRules,
 		getFileRules
-	  } = require('webpack-config-utils')()
+	  } = require('webpack-config-create-utils')()
 ```
 
 ## Methods
@@ -323,7 +323,7 @@ const path = require('path'),
 		getStyleRules,
 		getScriptRules,
 		getFileRules
-	  } = require('webpack-config-utils')()
+	  } = require('webpack-config-create-utils')()
 
 const {
 		isDev,
