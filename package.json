@@ -1,0 +1,38 @@
+{
+  "name": "webpack-config-utils",
+  "version": "0.0.1",
+  "description": "webpack config utils with default loaders and plugin, which help create webpack.config file",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/webster6667/webpack-config-utils.git"
+  },
+  "keywords": [],
+  "author": "webster6667",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/webster6667/webpack-config-utils/issues"
+  },
+  "peerDependencies": {
+    "@babel/plugin-proposal-class-properties": "^7.14.5",
+    "@babel/preset-env": "^7.15.0",
+    "@babel/preset-typescript": "^7.15.0",
+    "@svgr/webpack": "^5.5.0",
+    "babel-loader": "^8.2.2",
+    "clean-webpack-plugin": "^4.0.0-alpha.0",
+    "css-loader": "^6.2.0",
+    "css-minimizer-webpack-plugin": "^3.0.2",
+    "grand-parent-loader": "^1.0.0",
+    "group-css-media-queries-loader": "^3.0.2",
+    "html-webpack-plugin": "^5.3.2",
+    "less-loader": "^10.0.1",
+    "mini-css-extract-plugin": "^2.2.0",
+    "postcss-loader": "^6.1.1",
+    "sass-loader": "^12.1.0",
+    "style-resources-loader": "^1.4.1",
+    "svgo-loader": "^3.0.0",
+    "terser-webpack-plugin": "^5.1.4"
+  },
+  "homepage": "https://github.com/webster6667/webpack-config-utils#readme"
+}
