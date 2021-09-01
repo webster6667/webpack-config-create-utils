@@ -60,7 +60,7 @@ module.exports = {
     //...
     
 	mode: buildModeByNodeEnv,
-	devtool: isDev ? false : false, //Проверить
+	devtool: isDev ? 'source-map' : false,
 	output: {
     		filename: getFileNameByMode('js')
     },
@@ -342,7 +342,7 @@ const {
 module.exports = {
 	context: getFileRelativeConfigFile('src'),
 	mode: buildModeByNodeEnv,
-	devtool: isDev ? false : false, //Проверить
+	devtool: isDev ? 'source-map' : false,
 	entry: ['@babel/polyfill', './index.tsx'],
 	output: {
 		filename: getFileNameByMode('js'),
