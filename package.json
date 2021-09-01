@@ -1,6 +1,6 @@
 {
   "name": "webpack-config-create-utils",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "webpack config utils with default loaders and plugin, which help create webpack.config file",
   "main": "index.js",
   "scripts": {},
@@ -32,7 +32,8 @@
     "sass-loader": "^12.1.0",
     "style-resources-loader": "^1.4.1",
     "svgo-loader": "^3.0.0",
-    "terser-webpack-plugin": "^5.1.4"
+    "terser-webpack-plugin": "^5.1.4",
+    "file-loader": "^6.2.0"
   },
   "homepage": "https://github.com/webster6667/webpack-config-create-utils#readme"
 }
