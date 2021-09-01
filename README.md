@@ -1,5 +1,5 @@
 <p align="center" style="text-align:center">
-    <img src="./illustration.svg" alt="illustration" width="100"/>
+    <img src="./illustration.svg" alt="illustration" width="400"/>
 </p>
 
 # webpack-config-utils
@@ -28,7 +28,7 @@ const {
 
 ## Methods
 
-###getBuildMode
+### getBuildMode
 
 Return data relative nodeEnv var
 
@@ -74,7 +74,7 @@ module.exports = {
 * getFileNameByMode - add Hash to files for production version
 * optimizationSettingsByMode - enable Css nano and Terser for production version
 
-###getResolveExtensions(additionalExtensionsArray)
+### getResolveExtensions(additionalExtensionsArray)
 
 Return array with file extensions, which webpack will parse
 
@@ -95,7 +95,7 @@ module.exports = {
 
 ```
 
-###getResolveExtensions(additionalExtensionsArray)
+### getResolveExtensions(additionalExtensionsArray)
 
 Return array with file extensions, which webpack will parse
 
@@ -116,7 +116,7 @@ module.exports = {
 
 ```
 
-###getDefaultPlugins
+### getDefaultPlugins
 
 return default plugins HtmlWebpackPlugin, CleanWebpackPlugin, MiniCssExtractPlugin
 
@@ -137,7 +137,7 @@ module.exports = {
 }
 ```
 
-###getStyleRules(additionalRulesConfig)
+### getStyleRules(additionalRulesConfig)
 return object with style loaders
 
 ```
@@ -215,7 +215,7 @@ module.exports = {
           getFileRules = require('./utils/rules/file-rules')
 
 
-###getScriptRules(scriptSettingConfig)
+### getScriptRules(scriptSettingConfig)
 return object with js, ts and babel loaders 
 
 ```
@@ -250,7 +250,7 @@ module.exports = {
 ```
 
 
-###getFileRules
+### getFileRules
 enable file loader for images, and svg like svg-code
 
 ##### Example
@@ -270,7 +270,7 @@ module.exports = {
 }
 ```
 
-#####load svg like svg code
+##### load svg like svg code
 ```
 
 import imgUrl, {ReactComponent as Img} from './image.svg'
