@@ -4,7 +4,9 @@ module.exports = (webpackVersion = 'webpack5') => {
           getResolveExtensions = require('./utils/resolve-extensions'),
           getStyleRules = require('./utils/rules/style-rules'),
           getScriptRules = require('./utils/rules/script-rules'),
-          getFileRules = require('./utils/rules/file-rules')
+          getFileRules = require('./utils/rules/file-rules'),
+          getAliasFromFile = require('./utils/alias-parser')
 
-    return {getBuildMode, getDefaultPlugins, getResolveExtensions, getStyleRules, getScriptRules, getFileRules}
+
+    return {getBuildMode, getDefaultPlugins, getResolveExtensions, getStyleRules, getScriptRules, getFileRules, getAliasFromFile}
 }

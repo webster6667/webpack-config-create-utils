@@ -1,6 +1,6 @@
 {
   "name": "webpack-config-create-utils",
-  "version": "1.0.2",
+  "version": "1.1.2",
   "description": "webpack config utils with default loaders and plugin, which help create webpack.config file",
   "main": "index.js",
   "scripts": {},

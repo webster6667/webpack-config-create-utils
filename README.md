@@ -22,7 +22,8 @@ const {
 		getResolveExtensions,
 		getStyleRules,
 		getScriptRules,
-		getFileRules
+		getFileRules,
+		getAliasFromFile
 	  } = require('webpack-config-create-utils')()
 ```
 
@@ -312,6 +313,33 @@ tsconfig.json
   ]
 ```
 
+### getAliasFromFile
+get alias for webpack, written on tsconfig rules
+
+##### Example
+```
+const alias = getAliasFromFile(__dirname) // default load tsconfig.json
+const alias = getAliasFromFile(__dirname, 'alias.json') // can read file with alias, with next structure
+
+//alias.json
+{
+  "paths": {
+    "@src/*": ["src/*"]
+  }
+}
+
+module.exports = {
+    //...
+
+	output: {},
+	resolve: {
+	    alias
+	},
+	
+	//...
+}
+```
+
 #### Full config example
 ```JS
 const path = require('path'),
@@ -322,7 +350,8 @@ const path = require('path'),
 		getResolveExtensions,
 		getStyleRules,
 		getScriptRules,
-		getFileRules
+		getFileRules,
+		getAliasFromFile
 	  } = require('webpack-config-create-utils')()
 
 const {
@@ -334,6 +363,7 @@ const {
 	} = getBuildMode(),
 	defaultPlugins = getDefaultPlugins({isProd}),
 	extensions = getResolveExtensions(),
+	alias = getAliasFromFile(__dirname),
     fileRules = getFileRules(),
 	styleRules = getStyleRules(),
 	scriptRules = getScriptRules()
@@ -348,7 +378,10 @@ module.exports = {
 		filename: getFileNameByMode('js'),
 		path: getFileRelativeConfigFile( 'dist')
 	},
-	resolve: {extensions},
+	resolve: {
+	    extensions,
+	    alias
+	},
 	optimization: optimizationSettingsByMode,
 	devServer: {
 		overlay: true
@@ -365,8 +398,6 @@ module.exports = {
 	}
 }
 ```
-
-
 
 ## Author
 
